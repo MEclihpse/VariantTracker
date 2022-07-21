@@ -26,3 +26,11 @@ section{
 footer{
     background-color: #0099ff;
 }
+
+button{
+    margin: 10px 10px;
+}
+
+.jarakAntarKita{
+    margin: 10px;
+}
