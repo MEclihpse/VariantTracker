@@ -1,7 +1,28 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: whitesmoke;
+}
 section{
-padding: 50px 0px;
+    padding: 0px
 }
 
 #barbar {
     position: sticky;
+}
+
+#output{
+    text-align: center;
+    padding: 50px 50px;
+    color: red;
+}
+
+.center {
+    text-align: center;
+}
+
+footer{
+    background-color: #0099ff;
 }
