@@ -1,23 +1,16 @@
 function cariVarian() {
-let varian = 
-{
-    Alpha: [`Demam`, `Batuk`, `Sesak Nafas`, `Pusing`],
-    Delta: [`Sakit kepala`, `Pusing`, `Anosmia`],
-    Omicron: [`Tenggorokan kering`, `Gangguan vital`, `Mata merah`]
-}
-varian = tambahkanVarian(varian)
- let name = document.getElementById("nama").value
- let gejala1 = document.getElementById("gejala1").value   
- let gejala2 = document.getElementById("gejala2").value   
- let gejala3 = document.getElementById("gejala3").value 
- let output = document.getElementById("output")
- let countA = 0
- let countD = 0
- let countO = 0
- for (let i in varian.Alpha) {
-     if (gejala1 === varian.Alpha[i]) countA++ 
-     if (gejala2 === varian.Alpha[i]) countA++ 
-     if (gejala3 === varian.Alpha[i]) countA++ 
+    let name = document.getElementById("nama").value
+    let gejala1 = document.getElementById("gejala1").value   
+    let gejala2 = document.getElementById("gejala2").value   
+    let gejala3 = document.getElementById("gejala3").value 
+    let output = document.getElementById("output")
+    let countA = 0
+    let countD = 0
+    let countO = 0
+    for (let i in varian.Alpha) {
+        if (gejala1 === varian.Alpha[i]) countA++ 
+        if (gejala2 === varian.Alpha[i]) countA++ 
+        if (gejala3 === varian.Alpha[i]) countA++ 
     }
     for (let j in varian.Delta) {
         if (gejala1 === varian.Delta[j]) countD++ 
@@ -41,12 +34,21 @@ if (arr === countO) {
 }
 }
 
-function tambahkanVarian(obj){
-   let admin = document.getElementById(admin).value 
-   let newG = document.getElementById(tambahGejala).value 
-   let newVar =document.getElementById(tambahVarian).value
-    if (admin === `Ryan`) {
-        obj[newVar].push(newG)
-        
-    }
+function tambahkanVarian(){
+   let admin = document.getElementById("admin").value;
+   let newG = document.getElementById("tambahGejala").value;
+   let newVar = document.getElementById("tambahVarian").value;
+   if (admin === `Ryan`) {
+    varian[newVar].push(newG);
+    document.getElementById("gejala1").innerHTML += `<option value="${newG}">${newG}</option>`
+    document.getElementById("gejala2").innerHTML += `<option value="${newG}">${newG}</option>`
+    document.getElementById("gejala3").innerHTML += `<option value="${newG}">${newG}</option>`
+   } 
+}
+
+let varian = 
+{
+    Alpha: [`Demam`, `Batuk`, `Sesak Nafas`, `Pusing`],
+    Delta: [`Sakit kepala`, `Pusing`, `Anosmia`],
+    Omicron: [`Tenggorokan kering`, `Gangguan vital`, `Mata merah`]
 }

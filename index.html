@@ -37,24 +37,23 @@
     <section id="about">
         <div class="jumbotron">
             <h1 class="display-4">Covid Variant Tracker</h1>
-            <p class="lead">This site is really boring</p>
+            <p class="lead">Situs ini dibuat untuk mencari varian dari gejala covid-19</p>
             <hr class="my-4">
-            <p>Track your covid variant symptopms</p>
+            <p>Bismillah fase 1</p>
         </div>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path fill="#0099ff" fill-opacity="1" d="M0,96L48,90.7C96,85,192,75,288,101.3C384,128,480,192,576,192C672,192,768,128,864,101.3C960,75,1056,85,1152,101.3C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
           </svg>
     </section>
     <section id="content">
-      <h1 class="center">Check</h1>
+      <h1 class="center">Content</h1>
       <div class="container">
         <div class="row">
           <div class="col-sm">
-            <p>Nama</p>
-            <input type="text" id="nama"> 
-            <div>
+            <input type="text" id="nama" class="jarakAntarKita" placeholder="Nama"> 
+            <div class="jarakAntarKita">
                  <label for="gejala">Pilih gejala 1</label>
-                 <select class="form-select" aria-label="Gejala 1" id="gejala1">
+                 <select class="form-select opt-box" aria-label="Gejala 1" id="gejala1">
                          <option value="Demam">Demam</option>
                          <option value="Batuk">Batuk</option>
                          <option value="Sesak nafas">Sesak nafas</option>
@@ -66,9 +65,9 @@
                          <option value="Mata merah">Mata merah</option>
                   </select>
             </div>
-            <div>
+            <div class="jarakAntarKita">
                  <label for="gejala">Pilih gejala 2</label>
-                 <select class="form-select" aria-label="Gejala 2" id="gejala2">
+                 <select class="form-select opt-box" aria-label="Gejala 2" id="gejala2">
                          <option value="Demam">Demam</option>
                          <option value="Batuk">Batuk</option>
                          <option value="Sesak nafas">Sesak nafas</option>
@@ -80,9 +79,9 @@
                          <option value="Mata merah">Mata merah</option>
                      </select>
             </div>
-            <div>
+            <div class="jarakAntarKita">
                  <label for="gejala">Pilih gejala 3</label>
-                 <select class="form-select" aria-label="Gejala 3" id="gejala3">
+                 <select class="form-select opt-box" aria-label="Gejala 3" id="gejala3">
                          <option value="Demam">Demam</option>
                          <option value="Batuk">Batuk</option>
                          <option value="Sesak nafas">Sesak nafas</option>
@@ -92,7 +91,7 @@
                          <option value="Tenggorokan kering">Tenggorokan kering</option>
                          <option value="Gangguan vital">Gangguan alat vital</option>
                          <option value="Mata merah">Mata merah</option>"mata merah">Mata merah</option>
-                     </select>
+                  </select>
             </div>
             <button type="button" class="btn btn-info" onclick="cariVarian()">Submit</button>
           </div>
