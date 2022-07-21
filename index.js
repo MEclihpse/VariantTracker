@@ -6,7 +6,7 @@ function cariVarian() {
         Omicron: [`Tenggorokan kering`, `Gangguan vital`, `Mata merah`]
     }
  let name = document.getElementById("nama").value
- let gejala1 = document.getElementById("gejala1").value  
+ let gejala1 = document.getElementById("gejala1").value 
  let gejala2 = document.getElementById("gejala2").value
  let gejala3 = document.getElementById("gejala3").value
  let output = document.getElementById("output")
@@ -17,10 +17,10 @@ function cariVarian() {
      if (gejala1 === varian.Alpha[i] || gejala2 === varian.Alpha[i] || gejala3 === varian.Alpha[i]) countA++ 
     }
     for (let j in varian.Delta) {
-        if (gejala1 === varian.Alpha[j] || gejala2 === varian.Alpha[j] || gejala3 === varian.Alpha[j]) countD++  
+        if (gejala1 === varian.Delta[j] || gejala2 === varian.Delta[j] || gejala3 === varian.Delta[j]) countD++  
     }
     for (let k in varian.Omicron) {
-        if (gejala1 === varian.Alpha[k] || gejala2 === varian.Alpha[k] || gejala3 === varian.Alpha[k]) countO++ 
+        if (gejala1 === varian.Omicron[k] || gejala2 === varian.Omicron[k] || gejala3 === varian.Omicron[k]) countO++ 
     }
 let arr = [countA, countD, countO].sort()[2]
     if (arr === countA) {
