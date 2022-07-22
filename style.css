@@ -3,7 +3,7 @@
 }
 
 body{
-    background-color: whitesmoke;
+    background-color: #7dcfb6;
 }
 section{
     padding: 0px
@@ -11,6 +11,7 @@ section{
 
 #barbar {
     position: sticky;
+    top: 0px;
 }
 
 #output{
@@ -33,4 +34,7 @@ button{
 
 .jarakAntarKita{
     margin: 10px;
+}
+.jumbotron {
+    margin: 25px;
 }
